@@ -13,7 +13,7 @@ def home():
         {
             'titulo': 'Esta página :) (Flask + tailwind)',
             'descripcion': 'Es mi primera página web, seguiremos mejorando con el tiempo. ',
-            'url': '#'
+            'url': 'https://github.com/Diegogoiti/diegogoitia.dev'
         }
     ]
     return render_template("index.html", proyectos=proyectos_destacados)

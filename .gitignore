@@ -1,0 +1,18 @@
+# Ejecutables
+*.exe
+tailwindcss
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+venv/
+.env
+
+# Node (si llegas a usarlo)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
