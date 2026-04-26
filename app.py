@@ -6,9 +6,9 @@ app = Flask(__name__)
 def home():
     proyectos_destacados = [
         {
-            'titulo': 'DYFIT Student Manager (Rust)',
+            'titulo': 'Karate Student Manager (Rust)',
             'descripcion': 'Gestión de estudiantes para dojo, optimizado con SQLite y seguridad de tipos.',
-            'url': 'https://github.com/Diegogoiti/DYFIT-Student-Manager-dioxus'
+            'url': 'https://github.com/Diegogoiti/Karate-Student-Manager'
         },
         {
             'titulo': 'Esta página :) (Flask + tailwind)',
