@@ -1,143 +1,246 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DiegoGoitia.Dev</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='dist/output.css') }}">
-    <meta name="description" content="Portafolio de Diego Goitia - Desarrollador Backend especializado en Python y Rust, y Sempai de Karate.">
-    <meta name="google-site-verification" content="Xzhr2k45LagOfLnY7FHFCykG86HvxUjNjMj4z1K_uSU" />
-<meta name="keywords" content="Diego Goitia, Desarrollador, Rust, Python, Karate Sempai, Programación, Venezuela">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DiegoGoitia.Dev</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='dist/output.css') }}"
+        />
+        <meta
+            name="description"
+            content="Portafolio de Diego Goitia - Desarrollador Backend especializado en Python y Rust, y Sempai de Karate."
+        />
+        <meta
+            name="google-site-verification"
+            content="Xzhr2k45LagOfLnY7FHFCykG86HvxUjNjMj4z1K_uSU"
+        />
+        <meta
+            name="keywords"
+            content="Diego Goitia, Desarrollador, Rust, Python, Karate Sempai, Programación, Venezuela"
+        />
 
-<meta property="og:title" content="DiegoGoitia.Dev | Sempai & Developer">
-<meta property="og:description" content="Explora mis proyectos de software y mi trayectoria como artista marcial.">
-<meta property="og:image" content="{{ url_for('static', filename='img/perfil.jpg') }}">
-<meta property="og:url" content="https://diegogoitia-dev.onrender.com/">
-
-</head>
-<body class="bg-[#061E29] text-white"> <div class="bg-[#1B3C53] h-16 sticky top-0 flex items-center border-b border-gray-900 z-50">
-        <h1 class="text-[rgb(59,193,168)] px-10 text-xl font-mono font-bold">DiegoGoitia.Dev</h1>
-    </div> 
-
-<div class="flex flex-col pt-16 items-center px-4">
-    
-    <div class="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-3xl w-full">
-        
-        <div class="flex-shrink-0 transition-all duration-300 transform hover:-translate-y-3">
-            <img src="{{ url_for('static', filename='img/perfil.jpg') }}" 
-                 alt="Diego Goitia" 
-                 class="w-40 h-50 rounded-lg border-2 border-[rgb(59,193,168)] object-cover shadow-lg hover:shadow-[0_20px_40px_-15px_rgba(59,193,168,0.3)] transition-all duration-300">
+        <meta
+            property="og:title"
+            content="DiegoGoitia.Dev | Sempai & Developer"
+        />
+        <meta
+            property="og:description"
+            content="Explora mis proyectos de software y mi trayectoria como artista marcial."
+        />
+        <meta
+            property="og:image"
+            content="{{ url_for('static', filename='img/perfil.jpg') }}"
+        />
+        <meta
+            property="og:url"
+            content="https://diegogoitia-dev.onrender.com/"
+        />
+    </head>
+    <body class="bg-[#061E29] text-white">
+        <div
+            class="bg-[#1B3C53] h-16 sticky top-0 flex items-center border-b border-gray-900 z-50"
+        >
+            <h1
+                class="text-[rgb(59,193,168)] px-10 text-xl font-mono font-bold"
+            >
+                DiegoGoitia.Dev
+            </h1>
         </div>
 
-        <div class="flex flex-col text-center md:text-left">
-            <h2 class="text-4xl font-bold mb-2">Diego Goitia</h2>
-            <p class="text-[rgb(59,193,168)] font-mono text-lg mb-2">@diego_goitia_</p>
-            
-            <div class="flex gap-4 justify-center md:justify-start mb-4">
-                <a href="https://github.com/Diegogoiti" target="_blank" class="transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"><img src="{{ url_for('static', filename='img/github.svg') }}" alt="GitHub" class="w-8 h-8"></a>
-                <a href="https://www.instagram.com/diego_goitia_/" target="_blank" class="transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"><img src="{{ url_for('static', filename='img/instagram.svg') }}" alt="instagram" class="w-8 h-8"></a>
-                <a href="mailto:diegogoitiazx1@gmail.com" target="_blank" class="transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"><img src="{{ url_for('static', filename='img/gmail.svg') }}" alt="Gmail" class="w-8 h-8"></a>
+        <div class="flex flex-col pt-16 items-center px-4">
+            <div
+                class="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-3xl w-full"
+            >
+                <div
+                    class="flex-shrink-0 transition-all duration-300 transform hover:-translate-y-3"
+                >
+                    <img
+                        src="{{ url_for('static', filename='img/perfil.jpg') }}"
+                        alt="Diego Goitia"
+                        class="w-40 h-50 rounded-lg border-2 border-[rgb(59,193,168)] object-cover shadow-lg hover:shadow-[0_20px_40px_-15px_rgba(59,193,168,0.3)] transition-all duration-300"
+                    />
+                </div>
+
+                <div class="flex flex-col text-center md:text-left">
+                    <h2 class="text-4xl font-bold mb-2">Diego Goitia</h2>
+                    <p class="text-[rgb(59,193,168)] font-mono text-lg mb-2">
+                        @diego_goitia_
+                    </p>
+
+                    <div
+                        class="flex gap-4 justify-center md:justify-start mb-4"
+                    >
+                        <a
+                            href="https://github.com/Diegogoiti"
+                            target="_blank"
+                            class="transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+                            ><img
+                                src="{{ url_for('static', filename='img/github.svg') }}"
+                                alt="GitHub"
+                                class="w-8 h-8"
+                        /></a>
+                        <a
+                            href="https://www.instagram.com/diego_goitia_/"
+                            target="_blank"
+                            class="transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+                            ><img
+                                src="{{ url_for('static', filename='img/instagram.svg') }}"
+                                alt="instagram"
+                                class="w-8 h-8"
+                        /></a>
+                        <a
+                            href="mailto:diegogoitiazx1@gmail.com"
+                            target="_blank"
+                            class="transition-all duration-300 transform hover:scale-125 hover:-translate-y-1"
+                            ><img
+                                src="{{ url_for('static', filename='img/gmail.svg') }}"
+                                alt="Gmail"
+                                class="w-8 h-8"
+                        /></a>
+                    </div>
+
+                    <p class="text-gray-400 leading-relaxed font-sans">
+                        Desarrollador Backend autodidacta enfocado en Python y
+                        Rust. Amante del código simple y eficiente. Cinturón
+                        negro de Karate y Técnico en reparación de computadoras.
+                    </p>
+                </div>
             </div>
 
-            <p class="text-gray-400 leading-relaxed font-sans">
-                Desarrollador Backend autodidacta enfocado en Python y Rust. 
-                Amante del código simple y eficiente. Cinturón negro de Karate y Técnico en reparación de computadoras.
-            </p>
+            <div class="mt-16 w-full max-w-4xl flex flex-col gap-6 px-4">
+                <h3
+                    class="text-3xl font-extrabold border-b border-gray-800 pb-4 mb-4 text-center tracking-tight"
+                >
+                    Repositorios Destacados
+                </h3>
+                <div
+                    class="flex flex-wrap md:grid md:grid-cols-2 gap-6 justify-center"
+                >
+                    {% for proyecto in proyectos %}
+                    <!-- Agregamos clases para que si queda huérfana en mobile/tablet/desktop se comporte de forma fluida -->
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay="{{ loop.index0 * 150 }}"
+                        class="w-full md:w-auto {% if loop.last and loop.index % 2 != 0 %}md:col-span-2 md:max-w-[calc(50%-12px)] md:mx-auto{% endif %}"
+                    >
+                        <a
+                            href="{{ proyecto.url }}"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="group flex flex-col h-full p-6 rounded-xl transition-all duration-300 transform bg-[#0a2e3f]/60 border border-[rgb(59,193,168)]/40 md:bg-[#0a2e3f]/40 md:border-[rgb(59,193,168)]/10 md:hover:border-[rgb(59,193,168)]/60 md:hover:bg-[#0a2e3f]/80 md:hover:-translate-y-2 shadow-[0_10px_30px_-15px_rgba(59,193,168,0.2)] md:shadow-none md:hover:shadow-[0_10px_30px_-15px_rgba(59,193,168,0.3)]"
+                        >
+                            <div class="flex items-center justify-between mb-3">
+                                <span
+                                    class="font-bold text-xl text-white md:text-[rgb(59,193,168)] md:group-hover:text-white transition-colors"
+                                >
+                                    {{ proyecto.titulo }}
+                                </span>
+                                <i
+                                    class="fa-regular fa-folder-open text-[rgb(59,193,168)] md:text-gray-500 md:group-hover:text-[rgb(59,193,168)] transition-colors"
+                                ></i>
+                            </div>
+
+                            <!-- Agregamos flex-grow para que si una card tiene más texto que otra, el botón de abajo siempre alinee perfecto -->
+                            <p
+                                class="text-sm text-gray-200 md:text-gray-400 leading-relaxed md:group-hover:text-gray-200 flex-grow"
+                            >
+                                {{ proyecto.descripcion }}
+                            </p>
+
+                            <div
+                                class="mt-5 flex items-center text-xs font-mono text-[rgb(59,193,168)]/90 md:text-gray-600 md:group-hover:text-[rgb(59,193,168)]/80"
+                            >
+                                <span>Explorar código</span>
+                                <i
+                                    class="fa-solid fa-arrow-right ml-2 transform md:group-hover:translate-x-1 transition-transform"
+                                ></i>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="mt-16 max-w-4xl mx-auto mb-5">
+                <h3
+                    class="text-3xl font-extrabold border-b border-gray-800 pb-4 mb-8 text-center tracking-tight"
+                >
+                    Skills & Technologies
+                </h3>
+
+                <div class="flex flex-wrap gap-5 justify-center p-4">
+                    {% for skill in skills %}
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-delay="{{ loop.index0 * 50 }}"
+                    >
+                        <span
+                            class="px-6 py-3 bg-[#0a2e3f] text-[rgb(59,193,168)] text-lg rounded-xl border border-[rgb(59,193,168)]/30 shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_25px_-5px_rgba(59,193,168,0.4)] cursor-default flex items-center"
+                        >
+                            <i class="{{ skill.icono }} mr-3 text-xl"></i> {{
+                            skill.nombre }}
+                        </span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-    </div>
 
+        <footer
+            class="mt-5 py-12 border-t border-gray-800 bg-[#061E29]/50 w-full"
+        >
+            <div class="max-w-4xl mx-auto px-4 flex flex-col items-center">
+                <p
+                    class="text-gray-400 text-sm font-mono uppercase tracking-[0.3em] text-center"
+                >
+                    <span
+                        class="text-white font-bold block md:inline mb-2 md:mb-0"
+                        >Diego Goitia</span
+                    >
+                    <span class="hidden md:inline text-[rgb(59,193,168)] mx-2"
+                        >|</span
+                    >
+                    <span class="block md:inline">Sempai & Developer</span>
+                </p>
 
-<div class="mt-16 w-full max-w-4xl flex flex-col gap-6 px-4">
-    <h3 class="text-3xl font-extrabold border-b border-gray-800 pb-4 mb-4 text-center tracking-tight">
-        Repositorios Destacados
-    </h3>
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {% for proyecto in proyectos %}
-    <div data-aos="fade-up" data-aos-delay="{{ loop.index0 * 150 }}">
-        
-        <a href="{{ proyecto.url }}" target="_blank" rel="noopener noreferrer" 
-           class="group flex flex-col p-6 rounded-xl transition-all duration-300 transform 
-                  bg-[#0a2e3f]/60 border border-[rgb(59,193,168)]/40 
-                  md:bg-[#0a2e3f]/40 md:border-[rgb(59,193,168)]/10 
-                  md:hover:border-[rgb(59,193,168)]/60 md:hover:bg-[#0a2e3f]/80 md:hover:-translate-y-2 
-                  shadow-[0_10px_30px_-15px_rgba(59,193,168,0.2)] md:shadow-none md:hover:shadow-[0_10px_30px_-15px_rgba(59,193,168,0.3)]">
-            
-            <div class="flex items-center justify-between mb-3">
-                <span class="font-bold text-xl text-white md:text-[rgb(59,193,168)] md:group-hover:text-white transition-colors">
-                    {{ proyecto.titulo }}
-                </span>
-                <i class="fa-regular fa-folder-open text-[rgb(59,193,168)] md:text-gray-500 md:group-hover:text-[rgb(59,193,168)] transition-colors"></i>
+                <div
+                    class="mt-8 flex flex-col md:flex-row flex-wrap justify-center gap-y-4 md:gap-x-6 text-[10px] text-gray-500 font-sans uppercase tracking-widest text-center"
+                >
+                    <div class="flex items-center justify-center gap-2">
+                        <i
+                            class="fa-solid fa-code text-[rgb(59,193,168)] text-xl"
+                        ></i>
+                        <span
+                            >No hay sueño muy grande para un soñador
+                            inmenso</span
+                        >
+                    </div>
+                </div>
+
+                <p
+                    class="mt-10 text-[12px] text-gray-600 font-mono text-center"
+                >
+                    © 2026 <span class="text-[rgb(59,193,168)]">//</span> Hecho
+                    con Python, Flask y sudor.
+                </p>
             </div>
-
-            <p class="text-sm text-gray-200 md:text-gray-400 leading-relaxed md:group-hover:text-gray-200">
-                {{ proyecto.descripcion }}
-            </p>
-
-            <div class="mt-5 flex items-center text-xs font-mono text-[rgb(59,193,168)]/90 md:text-gray-600 md:group-hover:text-[rgb(59,193,168)]/80">
-                <span>Explorar código</span>
-                <i class="fa-solid fa-arrow-right ml-2 transform md:group-hover:translate-x-1 transition-transform"></i>
-            </div>
-        </a>
-    </div>
-        
-        
-    </a>
-    {% endfor %}
-</div>
-</div>
-
-<div class="mt-16 max-w-4xl mx-auto mb-5">
-        <h3 class="text-3xl font-extrabold border-b border-gray-800 pb-4 mb-8 text-center tracking-tight">
-            Skills & Technologies
-        </h3>
-        
-<div class="flex flex-wrap gap-5 justify-center p-4">
-    {% for skill in skills %}
-    <div data-aos="zoom-in" data-aos-delay="{{ loop.index0 * 50 }}">
-        
-        <span class="px-6 py-3 bg-[#0a2e3f] text-[rgb(59,193,168)] text-lg rounded-xl border border-[rgb(59,193,168)]/30 shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:shadow-[0_10px_25px_-5px_rgba(59,193,168,0.4)] cursor-default flex items-center">
-            <i class="{{ skill.icono }} mr-3 text-xl"></i> {{ skill.nombre }}
-        </span>
-        
-    </div>
-    {% endfor %}
-</div>
-    </div>
-</div>
-
-
-
-
-<footer class="mt-5 py-12 border-t border-gray-800 bg-[#061E29]/50 w-full">
-    <div class="max-w-4xl mx-auto px-4 flex flex-col items-center">
-        
-        <p class="text-gray-400 text-sm font-mono uppercase tracking-[0.3em] text-center">
-            <span class="text-white font-bold block md:inline mb-2 md:mb-0">Diego Goitia</span> 
-            <span class="hidden md:inline text-[rgb(59,193,168)] mx-2">|</span> 
-            <span class="block md:inline">Sempai & Developer</span>
-        </p>
-
-        <div class="mt-8 flex flex-col md:flex-row flex-wrap justify-center gap-y-4 md:gap-x-6 text-[10px] text-gray-500 font-sans uppercase tracking-widest text-center">
-            <div class="flex items-center justify-center gap-2">
-                <i class="fa-solid fa-code text-[rgb(59,193,168)] text-xl"></i>
-                <span>No hay sueño muy grande para un soñador inmenso</span>
-            </div>
-        </div>
-
-        <p class="mt-10 text-[12px] text-gray-600 font-mono text-center">
-            © 2026 <span class="text-[rgb(59,193,168)]">//</span> Hecho con Python, Flask y sudor.
-        </p>
-    </div>
-</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 800, 
-        once: true,   
-      });
-    </script>
-</body>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                once: true,
+            });
+        </script>
+    </body>
 </html>
