@@ -21,6 +21,11 @@ def home():
             "descripcion": "Scraper automatizado (POO) que analiza proyectos de Workana, extrayendo y ordenando las habilidades tecnológicas más demandadas mediante parsing de JSON interno.",
             "url": "https://github.com/Diegogoiti/Mi-primer-WebScrapper",
         },
+        {
+            "titulo": "Control de Asistencia por capta huellas (C# + Mysql)",
+            "descripcion": "Aplicación de escritorio desarrollada para controlar y reportar la asistencia mediante un captahuellas futronic fs88h",
+            "url": "https://github.com/Diegogoiti/ControlAcceso",
+        },
     ]
 
     skills = [
@@ -31,7 +36,7 @@ def home():
         {"nombre": "Networking", "icono": "fa-solid fa-network-wired"},
         {"nombre": "Git", "icono": "fa-brands fa-git-alt"},
         {"nombre": "linux", "icono": "fa-brands fa-linux"},
-        {"nombre": "HTML5", "icono": "fa-brands fa-html5"},
+        {"nombre": "C#", "icono": "devicon-csharp-plain"},
     ]
     return render_template("index.html", proyectos=proyectos_destacados, skills=skills)
 
