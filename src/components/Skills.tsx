@@ -2,21 +2,33 @@
 
 import { useEffect, useRef } from 'react'
 
-interface Skill {
-  nombre: string
+interface Category {
+  titulo: string
   icono: string
-  nivel: number
+  items: string[]
 }
 
-const skills: Skill[] = [
-  { nombre: 'Python', icono: 'fa-brands fa-python', nivel: 90 },
-  { nombre: 'Rust', icono: 'fa-brands fa-rust', nivel: 75 },
-  { nombre: 'C#', icono: 'devicon-csharp-plain', nivel: 70 },
-  { nombre: 'SQL', icono: 'fa-solid fa-database', nivel: 80 },
-  { nombre: 'Linux', icono: 'fa-brands fa-linux', nivel: 85 },
-  { nombre: 'Git', icono: 'fa-brands fa-git-alt', nivel: 85 },
-  { nombre: 'Networking', icono: 'fa-solid fa-network-wired', nivel: 65 },
-  { nombre: 'Hardware', icono: 'fa-solid fa-microchip', nivel: 70 },
+const categories: Category[] = [
+  {
+    titulo: 'Lenguajes',
+    icono: 'fa-solid fa-code',
+    items: ['Python', 'Rust', 'C#', 'SQL'],
+  },
+  {
+    titulo: 'Infraestructura',
+    icono: 'fa-solid fa-server',
+    items: ['Linux', 'Git', 'Networking'],
+  },
+  {
+    titulo: 'Hardware',
+    icono: 'fa-solid fa-microchip',
+    items: ['Reparación de PC', 'Captahuellas', 'Sistemas embebidos'],
+  },
+  {
+    titulo: 'Frameworks',
+    icono: 'fa-solid fa-cubes',
+    items: ['Django', 'Dioxus', 'Flet'],
+  },
 ]
 
 export default function Skills() {
@@ -27,15 +39,11 @@ export default function Skills() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const items = entry.target.querySelectorAll('.skill-bar')
+            const items = entry.target.querySelectorAll('.skill-category')
             items.forEach((item, index) => {
               setTimeout(() => {
                 item.classList.add('animate-slide-up')
-                const bar = item.querySelector('.bar-fill') as HTMLElement
-                if (bar) {
-                  bar.style.width = bar.dataset.width || '0%'
-                }
-              }, index * 80)
+              }, index * 100)
             })
           }
         })
@@ -57,22 +65,31 @@ export default function Skills() {
           Stack & Skills
         </h2>
 
-        <div className="grid sm:grid-cols-2 gap-x-12 gap-y-5">
-          {skills.map((skill, index) => (
-            <div key={index} className="skill-bar opacity-0">
-              <div className="flex items-center justify-between mb-2">
-                <div className="flex items-center gap-2.5">
-                  <i className={`${skill.icono} text-gray-500 text-sm w-4`}></i>
-                  <span className="text-gray-300 text-sm">{skill.nombre}</span>
+        <div className="grid sm:grid-cols-2 gap-4">
+          {categories.map((category, index) => (
+            <div
+              key={index}
+              className="skill-category opacity-0 group relative p-5 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.04] hover:border-white/[0.1] transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+              <div className="relative">
+                <div className="flex items-center gap-2.5 mb-4">
+                  <div className="w-7 h-7 rounded-md bg-primary/8 flex items-center justify-center group-hover:bg-primary/12 transition-colors">
+                    <i className={`${category.icono} text-primary-dim text-xs`}></i>
+                  </div>
+                  <h3 className="text-gray-300 text-sm font-medium">{category.titulo}</h3>
                 </div>
-                <span className="text-gray-600 text-xs font-mono">{skill.nivel}%</span>
-              </div>
-              <div className="h-1 bg-white/[0.04] rounded-full overflow-hidden">
-                <div
-                  className="bar-fill h-full bg-primary/40 rounded-full transition-all duration-1000 ease-out"
-                  style={{ width: '0%' }}
-                  data-width={`${skill.nivel}%`}
-                ></div>
+                <div className="flex flex-wrap gap-2">
+                  {category.items.map((item, i) => (
+                    <span
+                      key={i}
+                      className="text-[13px] text-gray-400 group-hover:text-gray-300 bg-white/[0.03] border border-white/[0.06] group-hover:border-white/[0.1] px-3 py-1.5 rounded-lg transition-all duration-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
